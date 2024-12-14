@@ -28,7 +28,7 @@ jobs:
         languages: ${{ matrix.language }}
         config: |
           queries:
-            - uses: security-extended
+            - uses: experimental
 
     # Attempt to build any compiled languages  (C/C++, C#, or Java).
     - run: make clean all
