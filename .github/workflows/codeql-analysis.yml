@@ -26,9 +26,7 @@ jobs:
       uses: github/codeql-action/init@v3
       with:
         languages: ${{ matrix.language }}
-        config: |
-          queries:
-            - uses: security-extended,security-and-quality
+        queries: security-extended,security-and-quality
 
     # Attempt to build any compiled languages  (C/C++, C#, or Java).
     - run: make clean all
